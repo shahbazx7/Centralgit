@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stages("Git Checkout"){
+            steps{
+                 git credentialsId: 'github', url: 'https://github.com/shahbazx7/Centralgit/blob/master/mumbai'
+            }
+        }
+    }
+}
